@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sanjay_my_goat/block.dart';
 
 void main() {
   runApp(const Towa());
@@ -64,82 +65,31 @@ class Towa extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 40),
-              Padding(
+              const Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: const BoxDecoration(
-                        color: Colors.yellowAccent,
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/Sanjay.png',
-                            width: 38,
-                          ),
-                          const SizedBox(height: 10),
-                          const Text("80%"),
-                          const SizedBox(height: 10),
-                          const Text("W Sanjay"),
-                        ],
-                      ),
+                    Block(
+                      "some title",
+                      "assets/images/Sanjay.png",
+                      colour: Colors.green,
+                      number: 19,
                     ),
-                    Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: const BoxDecoration(
-                        color: Colors.yellowAccent,
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/Sanjay.png',
-                            width: 38,
-                          ),
-                          const SizedBox(height: 10),
-                          const Text("80%"),
-                          const SizedBox(height: 10),
-                          const Text("W Sanjay"),
-                        ],
-                      ),
+                    Block(
+                      "some dummy text",
+                      "assets/images/kokHao.png",
+                      colour: Colors.green,
                     ),
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      decoration: BoxDecoration(color: Colors.purpleAccent),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/Sanjay.png',
-                            width: 50,
-                          ),
-                          const SizedBox(height: 10),
-                          const Text("80%"),
-                          const SizedBox(height: 10),
-                          const Text("W Sanjay"),
-                        ],
-                      ),
+                    Block(
+                      "bla bla bla",
+                      "assets/images/kokHao.png",
+                      colour: Colors.blue,
                     ),
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      decoration: BoxDecoration(color: Colors.yellowAccent),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/Sanjay.png',
-                            width: 50,
-                          ),
-                          const SizedBox(height: 10),
-                          const Text("80%"),
-                          const SizedBox(height: 10),
-                          const Text("W Sanjay"),
-                        ],
-                      ),
+                    Block(
+                      "bla bla bla",
+                      "assets/images/kokHao.png",
+                      colour: Colors.purpleAccent,
                     ),
                   ],
                 ),
