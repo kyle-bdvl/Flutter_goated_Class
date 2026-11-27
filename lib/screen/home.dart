@@ -2,7 +2,14 @@ import "package:flutter/material.dart";
 import 'package:sanjay_my_goat/block.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final bool isDarkMode;
+  final void Function() onToggleTheme;
+
+  const HomePage({
+    super.key,
+    required this.isDarkMode,
+    required this.onToggleTheme,
+  });
 
   // Declaring a function
   void doSomething() {
@@ -20,6 +27,12 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.blue,
         title: const Text("Profile"),
+        actions: [
+          IconButton(
+            icon: Icon(isDarkMode ? Icons.light_mode : Icons.dark_mode),
+            onPressed: onToggleTheme,
+          ),
+        ],
       ),
       body: Center(
         child: Column(
